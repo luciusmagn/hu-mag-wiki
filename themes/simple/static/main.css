@@ -181,7 +181,7 @@ figcaption {
   font-family: 'Fanwood';
   src: url("/media/Fanwood.otf") format('truetype');
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
   font-display: swap;
 }
 @font-face {
@@ -192,17 +192,17 @@ figcaption {
   font-display: swap;
 }
 @font-face {
-  font-family: 'Charger';
-  src: url("/media/ChargerExBdIt.ttf") format('truetype');
+  font-family: 'Fanwood Text';
+  src: url("/media/Fanwood Text.otf") format('truetype');
   font-weight: 800;
-  font-style: italic;
+  font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Charger';
-  src: url("/media/ChargerBd.ttf") format('truetype');
+  font-family: 'Fanwood Text Italic';
+  src: url("/media/Fanwood Text Italic.otf") format('truetype');
   font-weight: bold;
-  font-style: normal;
+  font-style: italic;
   font-display: swap;
 }
 @font-face {
@@ -246,4 +246,46 @@ figcaption {
   font-weight: 900;
   font-style: normal;
   font-display: swap;
+}
+html {
+  background-color: #fff;
+  min-height: 100vh;
+  filter: invert(1) hue-rotate(180deg);
+}
+body {
+  min-height: 100vh;
+  font-family: "Fanwood", serif;
+  font-size: 1.4rem !important;
+}
+main {
+  margin: 0 auto !important;
+}
+.post p {
+  text-align: justify;
+  text-justify: auto;
+}
+blockquote p {
+  color: #646464;
+}
+p em {
+  font-style: italic;
+  font-family: "Fanwood Italic", serif;
+}
+.char-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.char-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+th {
+  text-align: left;
+}
+img {
+  filter: invert(1);
 }
